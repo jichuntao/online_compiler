@@ -39,7 +39,7 @@
 #----------------------------------------------------------------------------
 
 # Target file name (without extension).
-TARGET = gh60_lufa
+TARGET = epbt60_temp
 
 # Directory common source filess exist
 TMK_DIR = ./tmk_keyboard/tmk_core
@@ -54,12 +54,16 @@ SRC =	./tmk_keyboard/keyboard/epbt60/keymap_common.c \
 	./tmk_keyboard/keyboard/epbt60/backlight.c
 
 ifdef KEYMAP
-    SRC := keymap_$(KEYMAP).c $(SRC)
+    SRC := $(KEYMAP) $(SRC)
 else
     SRC := ./tmk_keyboard/keyboard/epbt60/keymap_poker2.c $(SRC)
 endif
 
-CONFIG_H = ./tmk_keyboard/keyboard/epbt60/config.h
+ifdef CONF
+    CONFIG_H = $(CONF)
+else
+    CONFIG_H = ./tmk_keyboard/keyboard/epbt60/config.h
+endif
 
 ifdef HEXFILE
 	HEXFILE = $(HEXFILE)

@@ -40,7 +40,7 @@ function start_exec()
 {
 	var key = makeData.key;
 	var keyboardType=makeData.keyboardType;
-	var exec_commad='make -f Makefile_'+keyboardType+' ';
+	var exec_commad='make -f Makefile.'+keyboardType+' ';
 	exec_commad +='KEYMAP='+keymapDic+key+'.c ';
 	//exec_commad +='CONF='+configDic+key+'.h ';
 	exec_commad +='HEXFILE='+hexDic+key+'.hex';
