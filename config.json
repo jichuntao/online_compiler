@@ -2,6 +2,7 @@
 	"keyboardArr":["epbt_60","ble_60"],
 	"keymapDic":"./keymap/keymap_",
 	"configDic":"./keymap/config_",
+
 	"dataLen":4,
 	"hexDic" : "./static_file/"
 }
