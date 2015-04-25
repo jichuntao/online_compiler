@@ -3,3 +3,4 @@ node_modules
 ./static_file/*.hex
 ./keymap/*.c
 ./log
+./tmk_keyboard/
