@@ -1,0 +1,19 @@
+{
+
+  "name": "online_compiler",
+  "version": "1.0.1",
+  "author" : "Nstar",
+  "description" : "Nodejs online_compiler make file",
+  "keywords" : "tmk",
+
+  "license" : "MIT",
+  "engines" : { "node" : "0.10.x"},
+  "script" : {
+    "start" : "node server.js"
+  },
+  "private": true,
+
+  "dependencies": {
+    "sqlite3": "3.0.x"
+  }
+}
