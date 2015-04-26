@@ -26,7 +26,7 @@ function exe(req,res,rf,data)
 			if(Filetypes[rf.extname]){
 				contentType=Filetypes[rf.extname];
 			}
-			res.writeHead(200, { 'Content-Type': contentType });  
+			res.writeHead(200, { 'Content-Type': contentType , 'Content-Length':file.length});  
 			res.write(file, "binary");  
 			res.end();  
 		});  
