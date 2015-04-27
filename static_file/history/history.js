@@ -487,9 +487,10 @@ BrowserHistory = (function() {
                 historyHash = document.getElementById("safari_remember_field").value.split(",");
             }
         }
-
+        /*
         if (browserHasHashChange)        
             document.body.onhashchange = hashChangeHandler;
+        */
     }
 
     return {

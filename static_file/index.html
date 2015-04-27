@@ -37,7 +37,6 @@
         <script type="text/javascript" src="swfobject.js"></script>
         <script type="text/javascript">
             function resizeFlashContent(W,H){
-                console.log('test');
                 if(document.getElementById("WebEdit")){
                     if(W && document.getElementById("WebEdit").width!=W){
                         document.getElementById("WebEdit").width=W;
@@ -47,7 +46,6 @@
                         document.getElementById("WebEdit").height=H;
                     }
                 }
-                
             }
         </script>
         <script type="text/javascript">
@@ -55,7 +53,7 @@
             var swfVersionStr = "11.1.0";
             // To use express install, set to playerProductInstall.swf, otherwise the empty string. 
             var xiSwfUrlStr = "playerProductInstall.swf";
-            var flashvars = {};
+            var flashvars = {"href":window.location.href};
             var params = {};
             params.quality = "high";
             params.bgcolor = "#ffffff";
