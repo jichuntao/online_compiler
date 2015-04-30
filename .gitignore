@@ -7,3 +7,4 @@ tmk_keyboard
 .dep/
 *.log
 *_temp/
+keymap.db
