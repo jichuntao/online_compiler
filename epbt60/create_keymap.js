@@ -25,6 +25,7 @@ function create_keymap_file(data)
 		keymap_Data += '#include "../tmk_keyboard/keyboard/epbt60/keymap_common.h"\n\n';
 		keymap_Data += keymap_common(matrix);
 		keymap_Data += keymap_layer(matrix,layers,fnArr);
+		keymap_Data += keymap_speicalKey();
 		keymap_Data += handleFunction(fnArr);
 	}
 	
@@ -63,8 +64,8 @@ function handleFunction(fnArr)
 		var fn=fnArr[i];
 		fnOutArr[i]={};
 		if(typeof(fn)=='string'){
-			fnOutArr[i].action=epbtFnType.fntype_sp[fn];
-			fnOutArr[i].args=[];
+			fnOutArr[i].action=epbtFnType.fntype_sp[fn].action;
+			fnOutArr[i].args=cloneObj(epbtFnType.fntype_sp[fn].args);
 		}
 		else if(typeof(fn)=='object'){
 			var fncfg=epbtFnType.fntype[fn[0]];
@@ -109,6 +110,36 @@ function handleFunction(fnArr)
 	return ret;
 }
 
+function keymap_speicalKey()
+{
+	var ret='/* id for user defined function */\n';
+	ret+='enum function_id {\n    SHIFT_ESC,\n};\n\n';
+	ret+='#define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))\n';
+	ret+='void action_function(keyrecord_t *record, uint8_t id, uint8_t opt)\n{\n';
+	ret+=tableStr(4)+'static uint8_t shift_esc_shift_mask;\n\n';
+	ret+=tableStr(4)+'switch (id) {\n';
+	ret+=tableStr(8)+'case SHIFT_ESC:\n';
+	ret+=tableStr(12)+'shift_esc_shift_mask = get_mods()&MODS_CTRL_MASK;\n';
+	ret+=tableStr(12)+'if (record->event.pressed) {\n';
+	ret+=tableStr(16)+'if (shift_esc_shift_mask) {\n';
+    ret+=tableStr(20)+'add_key(KC_GRV);\n';  
+    ret+=tableStr(16)+'} else {\n';  
+    ret+=tableStr(20)+'add_key(KC_ESC);\n';  
+    ret+=tableStr(16)+'}\n';  
+    ret+=tableStr(12)+'} else {\n';  
+    ret+=tableStr(14)+'if (shift_esc_shift_mask) {\n';  
+    ret+=tableStr(20)+'del_key(KC_GRV);\n';  
+    ret+=tableStr(16)+'} else {\n';  
+    ret+=tableStr(20)+'del_key(KC_ESC);\n'; 
+    ret+=tableStr(16)+'}\n'; 
+    ret+=tableStr(12)+'}\n'; 
+    ret+=tableStr(12)+'send_keyboard_report();\n'; 
+    ret+=tableStr(12)+'break;\n'; 
+    ret+=tableStr(4)+'}\n'; 
+    ret+='}\n\n'; 
+    return ret;
+}
+
 function handleKey(key,fnArr)
 {
 
@@ -121,6 +152,10 @@ function handleKey(key,fnArr)
 		pkey='TRNS';
 	}
 	else if(key[0]=='KC_LED_IN' || key[0]=='KC_LED_DE' || key[0]=='KC_LED_TOGGLE'){
+		pkey='FN'+fnArr.length;
+		fnArr.push(key[0]);
+	}
+	else if(key[0]=='KC_SFT_ESC'){
 		pkey='FN'+fnArr.length;
 		fnArr.push(key[0]);
 	}

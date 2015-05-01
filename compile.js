@@ -35,7 +35,7 @@ function createKeymapFile(res,dataRet)
 
 	//check keymap.c file cache
 	fs.exists(keymapFile, function (exists) {
-		if(!exists){
+		if(!exists || true){
 			//create and write ketmap.c file
 			var kbt=require('./'+dataRet.keyboardType+'/create_keymap.js');
 			var kbtRet=kbt.create_keymap_file( dataRet.jsonData);

@@ -91,8 +91,23 @@
         }
     ],
     "fntype_sp": {
-        "KC_LED_IN": "ACTION_BACKLIGHT_INCREASE",
-        "KC_LED_DE": "ACTION_BACKLIGHT_DECREASE",
-        "KC_LED_TOGGLE": "ACTION_BACKLIGHT_TOGGLE"
+        "KC_LED_IN": {
+            "action": "ACTION_BACKLIGHT_INCREASE",
+            "args": []
+        },
+        "KC_LED_DE": {
+            "action": "ACTION_BACKLIGHT_DECREASE",
+            "args": []
+        },
+        "KC_LED_TOGGLE": {
+            "action": "ACTION_BACKLIGHT_TOGGLE",
+            "args": []
+        },
+        "KC_SFT_ESC": {
+            "action": "ACTION_FUNCTION",
+            "args": [
+                "SHIFT_ESC"
+            ]
+        }
     }
 }
