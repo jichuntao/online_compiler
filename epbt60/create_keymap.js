@@ -144,20 +144,14 @@ function handleKey(key,fnArr)
 {
 
 	var pkey;
-	if(key[0]=='KC_FN'){
-		pkey='FN'+fnArr.length;
-		fnArr.push(key[1]);
-	} 
-	else if(key[0]==''){
+	if(key[0]==''){
 		pkey='TRNS';
 	}
-	else if(key[0]=='KC_LED_IN' || key[0]=='KC_LED_DE' || key[0]=='KC_LED_TOGGLE'){
-		pkey='FN'+fnArr.length;
-		fnArr.push(key[0]);
+	else if(key[0]=='KC_FN'){
+		pkey='FN'+pushFnData(key[1],fnArr);
 	}
-	else if(key[0]=='KC_SFT_ESC'){
-		pkey='FN'+fnArr.length;
-		fnArr.push(key[0]);
+	else if(key[0]=='KC_SFT_ESC' || key[0]=='KC_LED_IN' || key[0]=='KC_LED_DE' || key[0]=='KC_LED_TOGGLE'){
+		pkey='FN'+pushFnData(key[0],fnArr);
 	}
 	else{
 		pkey=getkey(key[0]);
@@ -165,6 +159,25 @@ function handleKey(key,fnArr)
 	return pkey;
 }
 
+function pushFnData(fnData,fnArr)
+{
+	var ret=-1;
+	for(var i=0;i<fnArr.length;i++){
+		var obj = fnArr[i];
+		if(JSON.stringify(obj)==JSON.stringify(fnData)){
+			ret=i;
+			break;
+		}
+	}
+	if(ret==-1){
+		ret = fnArr.length;
+		fnArr.push(fnData);
+	}
+	if(ret>=32){
+		ret = 0;
+	}
+	return ret;
+}
 function keymap_layer(matrix,layers,fnArr)
 {
 	var ret='const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {\n\n';
