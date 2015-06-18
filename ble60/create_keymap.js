@@ -4,7 +4,7 @@ var FnType = require('./fntype.json');
 var numToStr=['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G'];
 var row=Config.row;
 var col=Config.col;
-var kbType='EPBT60';
+var kbType='BLE60';
 
 function create_keymap_file(data)
 {

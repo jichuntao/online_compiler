@@ -8,3 +8,4 @@ tmk_keyboard
 *.log
 *_temp/
 keymap.db
+server.js

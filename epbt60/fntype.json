@@ -1,0 +1,120 @@
+{
+    "fntype": [
+        {
+            "args": [],
+            "action": "ACTION_KEY",
+            "type": 0
+        },
+        {
+            "args": [
+                1
+            ],
+            "action": "ACTION_LAYER_MOMENTARY",
+            "type": 1
+        },
+        {
+            "args": [
+                1
+            ],
+            "action": "ACTION_LAYER_ON",
+            "type": 2
+        },
+        {
+            "args": [
+                1
+            ],
+            "action": "ACTION_LAYER_OFF",
+            "type": 2
+        },
+        {
+            "args": [
+                1
+            ],
+            "action": "ACTION_LAYER_TOGGLE",
+            "type": 1
+        },
+        {
+            "args": [
+                1,
+                "KC_NO"
+            ],
+            "action": "ACTION_LAYER_TAP_KEY",
+            "type": 3
+        },
+        {
+            "args": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "action": "ACTION_MODS",
+            "type": 4
+        },
+        {
+            "args": [
+                0,
+                0,
+                0,
+                0,
+                "KC_NO"
+            ],
+            "action": "ACTION_MODS_KEY",
+            "type": 5
+        },
+        {
+            "args": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "action": "ACTION_MODS_ONESHOT",
+            "type": 4
+        },
+        {
+            "args": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "action": "ACTION_MODS_TAP_TOGGLE",
+            "type": 4
+        },
+        {
+            "args": [
+                1
+            ],
+            "action": "ACTION_LAYER_CLEAR",
+            "type": 6
+        },
+        {
+            "args": [
+                
+            ],
+            "action": "ACTION_MACRO",
+            "type": 7
+        }
+    ],
+    "fntype_sp": {
+        "KC_LED_IN": {
+            "action": "ACTION_BACKLIGHT_INCREASE",
+            "args": []
+        },
+        "KC_LED_DE": {
+            "action": "ACTION_BACKLIGHT_DECREASE",
+            "args": []
+        },
+        "KC_LED_TOGGLE": {
+            "action": "ACTION_BACKLIGHT_TOGGLE",
+            "args": []
+        },
+        "KC_SFT_ESC": {
+            "action": "ACTION_FUNCTION",
+            "args": [
+                "SHIFT_ESC"
+            ]
+        }
+    }
+}

@@ -88,6 +88,13 @@
             ],
             "action": "ACTION_LAYER_CLEAR",
             "type": 6
+        },
+        {
+            "args": [
+                
+            ],
+            "action": "ACTION_MACRO",
+            "type": 7
         }
     ],
     "fntype_sp": {
@@ -108,6 +115,22 @@
             "args": [
                 "SHIFT_ESC"
             ]
+        },
+        "KC_BT_MODE": {
+            "action": "ACTION_CHANGE_SEND_MODE",
+            "args": []
+        },
+        "KC_BT_NAME": {
+            "action": "ACTION_CHANGE_BLE_NAME",
+            "args": []
+        },
+        "KC_BT_PAIR": {
+            "action": "ACTION_PAIRING_BLE",
+            "args": []
+        },
+        "KC_BT_DISCONT": {
+            "action": "ACTION_DISCONT_BLE",
+            "args": []
         }
     }
 }
