@@ -92,7 +92,7 @@ function handleFunction(fnArr)
 			}
 			else if(fncfg.type==5){
 				fnOutArr[i].args[0]=mod(fndata[0],fndata[1],fndata[2],fndata[3]);
-				fnOutArr[i].args[1]=fndata[5]?fndata[5]:'KC_NO';
+				fnOutArr[i].args[1]=fndata[4]?fndata[4]:'KC_NO';
 			}
 			else if(fncfg.type==6){
 				fnOutArr[i].args[0]=on[fndata[0]];
