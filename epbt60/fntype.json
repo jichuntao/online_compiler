@@ -90,9 +90,7 @@
             "type": 6
         },
         {
-            "args": [
-                
-            ],
+            "args": [],
             "action": "ACTION_MACRO",
             "type": 7
         }
