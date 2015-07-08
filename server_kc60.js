@@ -44,7 +44,7 @@ function restful(urlstr) {
     ret.pathname = urlObj.pathname;
     ret.query = urlObj.query;
     ret.pathname = path.normalize(ret.pathname);
-    ret.pathname = (ret.pathname == '/') ? ret.pathname = '/index_epbt.html' : ret.pathname;
+    ret.pathname = (ret.pathname == '/') ? ret.pathname = '/index_kc60.html' : ret.pathname;
     if (path.extname(ret.pathname) == '') {
         ret.command = path.basename(ret.pathname);
     } else {
