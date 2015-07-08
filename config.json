@@ -1,5 +1,5 @@
 {
-	"keyboardArr":["epbt60","ble60"],
+	"keyboardArr":["epbt60","ble60","kc60"],
 	"keymapDic":"./keymap/keymap_",
 	"configDic":"./keymap/config_",
 	
