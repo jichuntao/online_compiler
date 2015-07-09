@@ -10,7 +10,7 @@ var defaultKeymap_kc60='[[0,0,0,0,0],[[[["KC_SFT_ESC"],["KC_1"],["KC_2"],["KC_3"
 db.serialize(function() {
   //db.run("CREATE TABLE keymaps(key VARCHAR(32) primary key,kbtype VARCHAR(32), keymap text)");
 
-  db.run("insert into keymaps values('kc60','kc60','"+defaultKeymap_epbt60+"')");
+  db.run("insert into keymaps values('kc60','kc60','"+defaultKeymap_kc60+"')");
   //db.run("insert into keymaps values('ble60','ble60','"+defaultKeymap_ble60+"')");
   //db.run("insert into keymaps values('default','ble60','"+defaultKeymap_ble60+"')");
 });
