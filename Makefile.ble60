@@ -51,7 +51,8 @@ TARGET_DIR = ./tmk_keyboard
 SRC =	./tmk_keyboard/keyboard/ble60/keymap_common.c \
 	./tmk_keyboard/keyboard/ble60/matrix.c \
 	./tmk_keyboard/keyboard/ble60/led.c  \
-	./tmk_keyboard/keyboard/ble60/backlight.c
+	./tmk_keyboard/keyboard/ble60/backlight.c \
+	./tmk_keyboard/keyboard/ble60/lufa_ble.c
 
 ifdef KEYMAP
     SRC := $(KEYMAP) $(SRC)
