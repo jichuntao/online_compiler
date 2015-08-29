@@ -86,6 +86,7 @@ function handleFunction(fnArr,macroArr)
 	var ret='const uint16_t fn_actions[] PROGMEM = {\n\n';
 	var fnOutArr=[];
 	var on=['ON_PRESS','ON_RELEASE','ON_BOTH'];
+	var modArr;
 	var mod=function(a1,a2,a3,a4){
 		var mretArr=[];
 		if(a1){
@@ -100,7 +101,7 @@ function handleFunction(fnArr,macroArr)
 		if(a4){
 			mretArr.push('MOD_LGUI');
 		}
-		return mretArr.join(' | ');
+		return mretArr;
 	};
 	var i=0;
 	for(i=0;i<fnArr.length;i++){
@@ -130,11 +131,23 @@ function handleFunction(fnArr,macroArr)
 				fnOutArr[i].args[1]=fndata[1]?fndata[1]:'KC_NO';
 			}
 			else if(fncfg.type==4){
-				fnOutArr[i].args[0]=mod(fndata[0],fndata[1],fndata[2],fndata[3]);
+				modArr=mod(fndata[0],fndata[1],fndata[2],fndata[3]);
+				if(modArr.length>0){
+					fnOutArr[i].args[0]=modArr.join(' | ');
+				}else{
+					fnOutArr[i].action=FnType.fntype[0].action;
+					fnOutArr[i].args=['KC_NO'];
+				}
 			}
 			else if(fncfg.type==5){
-				fnOutArr[i].args[0]=mod(fndata[0],fndata[1],fndata[2],fndata[3]);
-				fnOutArr[i].args[1]=fndata[4]?fndata[4]:'KC_NO';
+				modArr=mod(fndata[0],fndata[1],fndata[2],fndata[3]);
+				if(modArr.length>0){
+					fnOutArr[i].args[0]=modArr.join(' | ');
+					fnOutArr[i].args[1]=fndata[4]?fndata[4]:'KC_NO';
+				}else{
+					fnOutArr[i].action=FnType.fntype[0].action;
+					fnOutArr[i].args[0]=fndata[4]?fndata[4]:'KC_NO';
+				}
 			}
 			else if(fncfg.type==6){
 				fnOutArr[i].args[0]=on[fndata[0]];

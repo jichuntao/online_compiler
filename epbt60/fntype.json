@@ -113,6 +113,10 @@
             "args": [
                 "SHIFT_ESC"
             ]
+        },
+        "KC_LOCK_WIN": {
+            "action": "ACTION_NOGUI_TOGGLE",
+            "args": []
         }
     }
 }
