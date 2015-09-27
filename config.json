@@ -1,7 +1,7 @@
 {
 	"keymapDic":"./keymap/keymap_",
 	"configDic":"./keymap/config_",
-	"keyboardToType":{"epbt60":"kb60","ble60":"ble60","kc60":"kb60","diyso60":"kb60"},
+	"keyboardToType":{"epbt60":"kb60","ble60":"ble60","kc60":"kb60","diyso60":"kb60","epbt60v2":"kb60"},
 	"dataLen":5,
 	"hexDic" : "./static_file/",
 	"binDic" : "./static_file/",
