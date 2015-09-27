@@ -1,9 +1,10 @@
 var fs = require('fs');
 var config = require('./config.json');
-var keyboardArr = config.keyboardArr;
+var keyboardToType = config.keyboardToType;
 var keymapDic = config.keymapDic;
 var configDic = config.configDic;
 var dataLen = config.dataLen;
+var filetypes = config.filetypes;
 
 function handle(data)
 {
@@ -23,16 +24,22 @@ function handle(data)
 		return ret;
 	}
 	var keyboardType = json[2];
-	if(keyboardArr.indexOf(keyboardType) == -1){
+	if(!keyboardToType[keyboardType]){
 		ret.status='error';
 		ret.msg='keyboard type error';
 		return ret;
 	}
-	
+	var filetype = json[4];
+	if(!filetypes[filetype]){
+		filetype = 'hex';
+	}
+
 	ret.status='ok';
 	ret.key = MD5(data);
 	ret.jsonData=json;
 	ret.keyboardType=keyboardType;
+	ret.type = keyboardToType[keyboardType];
+	ret.filetype = filetype;
 	return ret;
 }
 

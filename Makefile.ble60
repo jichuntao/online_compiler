@@ -72,6 +72,12 @@ else
 	HEXFILE = ./gh60_lufa.hex
 endif
 
+ifdef BINFILE
+	BINFILE = $(BINFILE)
+else
+	BINFILE = ./gh60_lufa.bin
+endif
+
 # MCU name
 #MCU = at90usb1287
 MCU = atmega32u4

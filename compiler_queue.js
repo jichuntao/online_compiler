@@ -12,6 +12,7 @@ var makeData;
 var keymapDic = config.keymapDic;
 var configDic = config.configDic;
 var hexDic = config.hexDic;
+var binDic = config.binDic;
 
 //register events
 emitter.on('start_exec', start_exec);
@@ -39,11 +40,12 @@ function tick()
 function start_exec()
 {
 	var key = makeData.key;
-	var keyboardType=makeData.keyboardType;
-	var exec_commad='make -f Makefile.'+keyboardType+' ';
+	var type= makeData.type;
+	var exec_commad='make -f Makefile.'+type+' ';
 	exec_commad +='KEYMAP='+keymapDic+key+'.c ';
 	//exec_commad +='CONF='+configDic+key+'.h ';
-	exec_commad +='HEXFILE='+hexDic+key+'.hex';
+	exec_commad +='HEXFILE='+hexDic+key+'.hex ';
+	exec_commad +='BINFILE='+binDic+key+'.bin';
 	make_child = exec(exec_commad,function (err, stdout, stderr) {
    		emitter.emit('end_exec',key, err, stdout)
 	});
@@ -57,7 +59,7 @@ function end_exec(key,err,stdout)
 		ret.msg = err.toString();
 	}else if(get_last_line(stdout)=='--------end'){
 		ret.status = 'success';
-		ret.path = key+'.hex';
+		ret.path = key;
 	}else{
 		ret.status = 'error';
 		ret.msg = stdout;
@@ -68,6 +70,9 @@ function end_exec(key,err,stdout)
 
 function callback(ret)
 {
+	if(ret.status=='success'){
+		ret.path += '.'+makeData.filetype;
+	}
 	busy = false;
 	var cb = makeData.cb;
 	cb(ret);

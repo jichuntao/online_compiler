@@ -4,7 +4,6 @@ var datahandler = require('./data_handler.js');
 var config = require('./config.json');
 var events = require('events');
 var emitter = new events.EventEmitter();
-var keyboardArr = config.keyboardArr;
 var keymapDic = config.keymapDic;
 var configDic = config.configDic;
 
@@ -39,7 +38,7 @@ function createKeymapFile(res,dataRet)
 	fs.exists(keymapFile, function (exists) {
 		if(!exists || true){
 			//create and write ketmap.c file
-			var kbt=require('./'+dataRet.keyboardType+'/create_keymap.js');
+			var kbt=require('./'+dataRet.type+'/create_keymap.js');
 			var kbtRet=kbt.create_keymap_file( dataRet.jsonData);
 			if(kbtRet.status=='error'){
 				ret.status='error';
@@ -68,6 +67,8 @@ function pushCompilerQueue(res,dataRet)
 	var obj={};
 	obj.key = dataRet.key;
 	obj.keyboardType = dataRet.keyboardType;
+	obj.type = dataRet.type;
+	obj.filetype = dataRet.filetype;
 	compiler_queue.push_queue(obj,function(ret){
 		if(ret.status=='error'){
 			ret.ip = dataRet.ip;

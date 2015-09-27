@@ -1,8 +1,9 @@
 {
-	"keyboardArr":["epbt60","ble60","kc60"],
 	"keymapDic":"./keymap/keymap_",
 	"configDic":"./keymap/config_",
-	
-"dataLen":4,
-	"hexDic" : "./static_file/"
+	"keyboardToType":{"epbt60":"kb60","ble60":"ble60","kc60":"kb60","diyso60":"kb60"},
+	"dataLen":5,
+	"hexDic" : "./static_file/",
+	"binDic" : "./static_file/",
+	"filetypes" : {"bin":true,"hex":true}
 }

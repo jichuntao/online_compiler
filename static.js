@@ -50,6 +50,7 @@ var Filetypes = {
    ".wma": "audio/x-ms-wma",
    ".wmv": "video/x-ms-wmv",
    ".svg": "image/svg+xml",
-   ".hex": "application/octet-stream"
+   ".hex": "application/octet-stream",
+   ".bin": "application/octet-stream"
 };
 exports.exe=exe;
