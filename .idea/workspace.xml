@@ -2,64 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="716e7b58-d42e-481b-9b4f-509b8488d9ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiler/Makefile.kb72" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiler/Makefile.kb84" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/epbt75.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/ie10-viewport-bug-workaround.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/index2.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/matrixs/kb72.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/matrixs/kb84.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/keyboard.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/sticky-footer.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Makefile.ble60" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Makefile.epbt60" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Makefile.kb60" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Makefile.kc60" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ble60/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ble60/create_keymap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ble60/fntype.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ble60/keycodeToKey.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/data_handler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/epbt60/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/epbt60/create_keymap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/epbt60/fntype.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/epbt60/keycodeToKey.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/initdb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/initdb_kc60.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kb60/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kb60/create_keymap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kb60/fntype.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kb60/keycodeToKey.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kc60/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kc60/create_keymap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kc60/fntype.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kc60/keycodeToKey.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/layout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server_diyso60.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server_epbt60.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server_epbt60v2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server_kc60.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/Preloader.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/WebEdit.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/crossdomain.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/history/history.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/history/history.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/history/historyFrame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/index_diyso60.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/index_epbt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/index_epbt60v2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/index_kc60.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/playerProductInstall.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_file/swfobject.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/compile.js" afterPath="$PROJECT_DIR$/controller/compile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler_queue.js" afterPath="$PROJECT_DIR$/controller/compiler_queue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online_compiler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/test/initdb_epbt75.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -114,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5698324">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -174,6 +119,7 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/test/initdb_epbt75.js" />
         <option value="$PROJECT_DIR$/views/epbt75.ejs" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -241,7 +187,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="compiler" />
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sqlite3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -255,7 +205,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,26 +345,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/initdb_diyso72.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5978022">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -745,10 +680,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sqlite3/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sqlite3/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0332681">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46575344">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/initdb_epbt75.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -756,7 +715,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5698324">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding />
         </state>
       </provider>

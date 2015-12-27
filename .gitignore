@@ -16,3 +16,4 @@ bin/.dep/
 bin/compiler
 bin/keymap
 bin/obj_*_temp
+.idea
