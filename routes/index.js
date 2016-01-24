@@ -40,4 +40,9 @@ router.get('/epbt75', function(req, res, next) {
 router.get('/index2', function(req, res, next) {
     res.render('epbt75', { kbtype: 'epbt75' });
 });
+
+/* test2 */
+router.get('/diyso72', function(req, res, next) {
+    res.render('diyso72', { kbtype: 'diyso72' });
+});
 module.exports = router;
