@@ -17,3 +17,5 @@ bin/compiler
 bin/keymap
 bin/obj_*_temp
 .idea
+public/firmware
+keymap
