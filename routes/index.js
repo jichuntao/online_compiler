@@ -45,4 +45,9 @@ router.get('/index2', function(req, res, next) {
 router.get('/diyer72', function(req, res, next) {
     res.render('diyso72', { kbtype: 'diyso72' });
 });
+
+/* kb68 */
+router.get('/kb68', function(req, res, next) {
+    res.render('kb68', { kbtype: 'kb68' });
+});
 module.exports = router;
